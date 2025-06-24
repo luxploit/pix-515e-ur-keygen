@@ -1,6 +1,6 @@
 # [luxploit](https://luxploit.net)/[pixlic](https://github.com/luxploit/pixlic)
 
-A simple keygen for generating unrestricted licenses (UR), including activation for 3DES and AES Encryption for VPNs, for Cisco PIX 500 series firewall appliances.
+A simple keygen for generating unrestricted licenses (UR), including activation for 3DES and AES Encryption for VPNs, for Cisco PIX 500 series firewall appliances aswell as "maxxed-out" licenses for Cisco ASA 5500 (non -X) series firewall appliances.
 
 ## Installation
 
@@ -10,10 +10,16 @@ Either clone this repo and run `./build.sh` in Git Bash for Windows or your loca
 
 **Run `./pixlic.lxb -list` to see all available PIX models**
 
-Example for PIX 515e Router:
+Example for PIX 515e:
 
 ```
-./pixlic.lxb -serial "809112952" -model "PIX 515"
+./pixlic.lxb PIX -serial "xxxxxxxxx" -model "PIX 515"
+```
+
+Example for ASA 5505:
+
+```
+./pixlic.lxb ASA -serial "xxxxxxxxx" -model "ASA 5505"
 ```
 
 ## Credits
